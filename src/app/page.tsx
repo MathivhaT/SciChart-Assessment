@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import SciChart from './components/SciChart'
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative w-full">
        <SciChart></SciChart>
       </div>
 
