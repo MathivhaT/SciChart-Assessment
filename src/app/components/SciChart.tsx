@@ -23,7 +23,6 @@ import {
 const SciChart = () => {
   const [data, setData] = useState<any[]>([]);
   const [searchResults, setsearchResults] = useState<any[]>([]);
-  const [filteredData, setFilteredData] = useState<any[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [county, setCounty] = useState("");
 
@@ -66,7 +65,6 @@ const SciChart = () => {
       filtered = county != null ? fliterbySearch : fliterbySelectedCounty;
       console.log();
     }
-    setFilteredData(filtered);
     searchList(filtered);
     const chartInitializationPromise = initSciChart(filtered);
     chartInitializationPromise;
