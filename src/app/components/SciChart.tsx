@@ -127,7 +127,7 @@ const SciChart = () => {
       new NumericAxis(wasmContext, { axisTitle: "Years", growBy })
     );
     sciChartSurface.yAxes.add(
-      new NumericAxis(wasmContext, { axisTitle: "Yield", growBy })
+      new NumericAxis(wasmContext, { axisTitle: "Yield %", growBy })
     );
 
     // Create a line series with some initial data
@@ -159,7 +159,7 @@ const SciChart = () => {
     <>
       <div className="container mx-auto p-4">
         <h1 className="text-3xl font-semibold mb-4">
-          Search County See Their Year Maize crop Yield From 2015 and 2022
+          Search County To See Their Year Maize crop Yield From 2015 and 2022
         </h1>
         <input
           type="text"
